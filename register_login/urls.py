@@ -24,5 +24,5 @@ from django.urls import include
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
-path('https://registerlogin11.herokuapp.com/',include('register.urls')),
+path('',include('register.urls')),
 ]
