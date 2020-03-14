@@ -42,6 +42,6 @@ def loggedin(request):
           return render(request,'loggedin.html')
       else:
           messages.info(request,'wrong entry')
-          return redirect('http://127.0.0.1:8000/loggedin/')
+          return redirect('https://registerlogin11.herokuapp.com/loggedin/')
     else:
         return render(request,'login.html')
