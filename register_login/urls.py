@@ -21,7 +21,8 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
-urlpatterns = [path("",include('register.urls')),
+urlpatterns = [
     # Uncomment the next line to enable the admin:
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+path('',include('register.urls')),
 ]
