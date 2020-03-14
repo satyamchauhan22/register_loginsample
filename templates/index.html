@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+   <center> 
+       <h1>Welcome To My First Django App</h1>
+       <h2>Registration Form <h2>
+   
+                                 <form action="" method="POST">
+                                     {% csrf_token %}
+                                     ENTER FIRST NAME:  <input type="text" name="first_name" /><br />
+                                     ENTER LAST NAME:  <input type="text" name="last_name" /><br />
+                                     ENTER USERNAME:  <input type="text" name="username" /><br />
+                                     ENTER EMAIL:  <input type="email" name="email" /><br />
+                                     ENTER PASSWORD:  <input type="password" name="password1" /><br />
+                                     ENTER CONFIRM PASSWORD:  <input type="password" name="password2"/><br />
+                                     <input type="submit" />
+                                    
+                                    
+
+</center>
+</body>
+</html>

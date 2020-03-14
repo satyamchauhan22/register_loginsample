@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        ENTER USERNAME:<input type="text" name="username" />
+        ENTER PASSWORD:<input type="password" name="password" />
+        <input type="submit" />
+        {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+</body>
+</html>

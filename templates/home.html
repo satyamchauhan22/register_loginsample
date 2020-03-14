@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <center>
+
+        <a href="http://127.0.0.1:8000/register/">click for register</a><br />
+        <a href="http://127.0.0.1:8000/loggedin/">click for login</a>
+        {% for message in messages %}
+        <h3> {{message}} </h3>
+        {% endfor %}
+    </center>
+
+</body>
+</html>
